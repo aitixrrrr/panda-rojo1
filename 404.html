@@ -4,9 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Panda perdido</title>
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="style.min.css">
+    <style>
+        html, body {
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgba(182, 25, 25, 0.95);
+            color: #222;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 24px;
+        }
+
+        .page-404 {
+            width: 100%;
+            max-width: 520px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 28px;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
+            padding: 42px 32px;
+        }
+
+        .status-icon {
+            font-size: 3.2rem;
+            margin-bottom: 14px;
+            display: inline-flex;
+            gap: 0.55rem;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 4.4rem);
+            margin: 0;
+            line-height: 1;
+            letter-spacing: -0.03em;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin: 18px 0 16px;
+            font-weight: 700;
+            color: #2c2c2c;
+        }
+
+        p {
+            margin: 0 auto;
+            padding: 18px 22px;
+            max-width: 360px;
+            border-left: 5px solid #b21919;
+            border-radius: 14px;
+            background-color: #fff0f0;
+            color: #b21919;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .btn-volver {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 14px 30px;
+            color: #ffffff;
+            background-color: #d63031;
+            font-size: 1rem;
+            border-radius: 999px;
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-volver:hover,
+        .btn-volver:focus {
+            transform: translateY(-2px);
+            background-color: #a81b1b;
+            box-shadow: 0 14px 24px rgba(0, 0, 0, 0.18);
+        }
+
+        .page-footer {
+            margin-top: 20px;
+            color: #ffffffcc;
+            font-size: 1.2rem;}
+    </style>
 </head>
 <body>
-    
+    <div class="page-404">
+        <main class="card" role="main">
+            <div class="status-icon" aria-hidden="true">🐾🐾</div>
+            <h1>404</h1>
+            <h2>¡Oops! Página no encontrada</h2>
+            <p>🍁 Esta página se perdió en el bosque de bambú. Puedes volver al inicio y seguir explorando.</p>
+            <a href="index.html" class="btn-volver">Volver al inicio</a>
+        </main>
+        <footer class="page-footer" aria-label="Decoración">🐾🐾🐾</footer>
+    </div>
 </body>
 </html>
